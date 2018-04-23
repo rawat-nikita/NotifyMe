@@ -3,14 +3,22 @@ package com.example.admin.notifyme;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 
-public class MainActivity extends AppCompatActivity {
+public class LoginActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-        Intent i = new Intent(this,LoginActivity.class);
+        setContentView(R.layout.activity_login);
+    }
+    public void onLoginClick(View v)
+    {
+
+    }
+    public void onSignupClick(View v)
+    {
+        Intent i = new Intent(this,SignupActivity.class);
         startActivity(i);
     }
 }
